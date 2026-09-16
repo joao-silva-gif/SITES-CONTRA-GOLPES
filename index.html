@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guardião Digital - Segurança para a Melhor Idade</title>
+  <style>
+    /* Reset e Configurações de Acessibilidade */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px; /* Texto grande por padrão */
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #111111; /* Alto contraste */
+      padding-bottom: 30px;
+    }
+
+    /* Cabeçalho Fixo e Clara */
+    header {
+      background-color: #004080; /* Azul escuro seguro */
+      color: #ffffff;
+      text-align: center;
+      padding: 25px 15px;
+      border-bottom: 5px solid #ffcc00; /* Amarelo de destaque */
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    /* Container Principal */
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    /* Sessão de Chamada para Ação / Alerta de Emergência */
+    .alerta-ajuda {
+      background-color: #ffebe6;
+      border: 3px solid #d9381e;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .alerta-ajuda h2 {
+      color: #b30000;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .btn-emergencia {
+      display: inline-block;
+      background-color: #d9381e;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 24px;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      margin-top: 10px;
+      border: 3px solid #800000;
+    }
+
+    .btn-emergencia:hover, .btn-emergencia:focus {
+      background-color: #b30000;
+      outline: 4px solid #ffcc00;
+    }
+
+    /* Estilo dos Cartões de Dicas */
+    .secao-titulo {
+      font-size: 28px;
+      color: #004080;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    .card-dica {
+      background-color: #ffffff;
+      border: 2px solid #cccccc;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .card-dica h3 {
+      font-size: 24px;
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    .card-dica p {
+      margin-bottom: 15px;
+    }
+
+    /* Destaque para Exemplo Falso/Verdadeiro */
+    .exemplo-golpe {
+      background-color: #fff3cd;
+      border-left: 6px solid #ffc107;
+      padding: 12px;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    /* Botão de Áudio (Acessibilidade) */
+    audio {
+      width: 100%;
+      height: 45px;
+      margin-top: 10px;
+    }
+
+    /* Guia Rápido / Dicas Simples */
+    .lista-regras {
+      list-style-type: none;
+    }
+
+    .lista-regras li {
+      background-color: #ffffff;
+      border: 2px solid #004080;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .lista-regras li::before {
+      content: "✓";
+      font-size: 30px;
+      color: #28a745;
+      margin-right: 15px;
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e6e6e6;
+      color: #333333;
+      font-size: 18px;
+      margin-top: 40px;
+    }
+
+    /* Foco visível para navegação via teclado */
+    a:focus, button:focus {
+      outline: 4px solid #ffcc00 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho Principal -->
+  <header>
+    <h1>Guardião Digital</h1>
+    <p>Seu assistente simples de segurança na internet</p>
+  </header>
+
+  <main>
+
+    <!-- Sessão de Emergência / Botão Grande -->
+    <section class="alerta-ajuda" aria-label="Apoio rápido">
+      <h2> Está com dúvida sobre algo suspeito?</h2>
+      <p>Não faça nada sozinho(a)! Peça ajuda antes de clicar ou pagar.</p>
+      <a href="tel:190" class="btn-emergencia" role="button">Ligar para um Familiar</a>
+    </section>
+
+    <!-- Sessão Principal de Dicas -->
+    <h2 class="secao-titulo">Dicas de Segurança de Hoje</h2>
+
+    <!-- Dica 1: WhatsApp / Mensagem Falsa -->
+    <article class="card-dica">
+      <h3>1. Cuidado com pedido de dinheiro pelo WhatsApp</h3>
+      <p>Se um filho ou neto mandar mensagem dizendo que mudou de número e pedir dinheiro urgente, <strong>não pague</strong>.</p>
+      
+      <div class="exemplo-golpe">
+        <strong>Exemplo de Mensagem Falsa:</strong><br>
+        "Oi mãe, troquei de número. Preciso pagar uma conta urgente hoje, você pode me mandar um Pix?"
+      </div>
+
+      <p><strong>O que fazer:</strong> Ligue para o número antigo do seu parente para confirmar se é ele mesmo antes de enviar qualquer valor.</p>
+      
+      <label for="audio-dica-1"><strong>Ouvir esta dica em áudio:</strong></label>
+      <audio id="audio-dica-1" controls>
+        <source src="#" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+    </article>
+
+    <!-- Dica 2: Ligações de Banco -->
+    <article class="card-dica">
+      <h3>2. Ligações dizendo ser do Banco</h3>
+      <p>Nenhum banco liga pedindo sua senha ou pedindo para você fazer uma transferência para "cancelar" uma compra.</p>
+      
+      <div class="exemplo-golpe">
+        <strong>Lembre-se:</strong> Se a pessoa na ligação pedir para você digitar senhas ou fazer Pix, desligue a ligação imediatamente!
+      </div>
+
+      <p><strong>O que fazer:</strong> Desligue o telefone, pegue seu cartão de banco e ligue para o número de atendimento que está atrás do próprio cartão.</p>
+
+      <label for="audio-dica-2"><strong>Ouvir esta dica em áudio:</strong></label>
+      <audio id="audio-dica-2" controls>
+        <source src="#" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+    </article>
+
+    <!-- Dica 3: Links e Premiações -->
+    <article class="card-dica">
+      <h3>3. Prêmios e Sorteios na Internet</h3>
+      <p>Se você receber uma mensagem dizendo que ganhou um prêmio, uma cesta de alimentos ou um desconto grande, desconfie.</p>
+      <p>Nunca clique em links enviados por desconhecidos por SMS ou e-mail.</p>
+    </article>
+
+    <!-- Regras Ouro / Resumo -->
+    <h2 class="secao-titulo">3 Regras de Ouro</h2>
+    <ul class="lista-regras">
+      <li>Nunca fale suas senhas para ninguém pelo telefone.</li>
+      <li>Na dúvida, desligue a ligação e peça ajuda a alguém de confiança.</li>
+      <li>Bancos nunca pedem para você fazer Pix para resolver problemas.</li>
+    </ul>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p><strong>Guardião Digital</strong> — Feito para proteger você.</p>
+    <p>Tamanho de texto ampliado para facilitar a leitura.</p>
+  </footer>
+
+</body>
+</html>
